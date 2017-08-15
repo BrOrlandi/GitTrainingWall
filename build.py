@@ -3,7 +3,7 @@ from server import list_users
 
 env = Environment(loader=FileSystemLoader('templates'))
 template = env.get_template('index.html')
-output_from_parsed_template = template.render(users=list_users()).encode('utf-8')
+output_from_parsed_template = template.render(users=list_users(),script=False).encode('utf-8')
 
 # print output_from_parsed_template
 

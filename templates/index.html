@@ -30,7 +30,7 @@
 
     <div class="row">
       {% for user in users %}
-      <div class="col s12 m6 l3">
+      <div class="col s12 m4 l2">
           {% include 'users/'+user %}
       </div>
       {% endfor %}
@@ -50,8 +50,8 @@
   <!--  Scripts-->
   <script src="static/bower/jquery/dist/jquery.min.js"></script>
   <script src="static/bower/materialize/dist/js/materialize.min.js"></script>
+  {% if script %}
   <script >
-
     var users = -1;
 
     function doPoll(){
@@ -68,6 +68,6 @@
       doPoll();
     });
   </script>
-
+  {% endif %}
   </body>
 </html>

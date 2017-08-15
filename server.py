@@ -12,7 +12,7 @@ def list_users():
 
 @app.route('/')
 def index():
-    return render_template('index.html', users=list_users())
+    return render_template('index.html', users=list_users(), script=True)
 
 
 @app.route('/users')
