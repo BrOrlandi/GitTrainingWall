@@ -8,5 +8,5 @@ output_from_parsed_template = template.render(users=list_users()).encode('utf-8'
 # print output_from_parsed_template
 
 # to save the results
-with open("docs/index.html", "wb") as fh:
+with open("index.html", "wb") as fh:
     fh.write(output_from_parsed_template)
