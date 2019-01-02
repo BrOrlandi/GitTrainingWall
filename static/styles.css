@@ -1,0 +1,10 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+i.material-icons.right {
+	position: absolute;
+    right: 10px;
+    top: 10px;
+}

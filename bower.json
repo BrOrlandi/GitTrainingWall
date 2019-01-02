@@ -1,0 +1,20 @@
+{
+  "name": "GitTrainingWall",
+  "version": "1.0",
+  "authors": [
+    "BrOrlandi <brorlandi@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.97.0",
+    "fontawesome": "~4.4.0"
+  }
+}
