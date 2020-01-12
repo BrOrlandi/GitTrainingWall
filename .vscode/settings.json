@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "C:\\Program Files (x86)\\Python\\Python38-32\\python.exe",
+    "python.testing.pytestArgs": [
+        "static"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}
