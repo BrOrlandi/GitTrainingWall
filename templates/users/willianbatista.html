@@ -1,0 +1,45 @@
+<div class="card hoverable">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="https://avatars1.githubusercontent.com/u/503747">
+  </div>
+  <div class="card-content activator" style="cursor:pointer">
+    <span class="card-title grey-text text-darken-4">
+      Willian Batista
+      <i class="fa fa-github"></i>
+    </span>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">
+      Willian Batista
+      <i class="material-icons right">close</i>
+    </span>
+    <p>
+      <span id="wfb.experienceYears"></span>+ years' experience in web software development working with
+      local and remote teams in national and international projects.
+    </p>
+    <p class="center">
+      <a href="https://github.com/wfuertes" class="grey lighten-2 black-text waves-effect waves-light btn">
+        <i class="fa fa-github-alt left"></i>
+        GitHub
+      </a>
+      <br><br>
+      <a href="https://www.linkedin.com/in/wfuertes" class="light-blue darken-4 white-text waves-effect waves-light btn">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        Linkedin
+      </a>
+      <br><br>
+      <i class="fa fa-linux" style="font-size:50pt"></i>
+    </p>
+  </div>
+</div>
+<script type="text/javascript">
+  ; (function (innerDoc) {
+    var daysBetween = function (startDate, endDate) {
+      var oneDay = 1000 * 60 * 60 * 24;
+      var diffMs = endDate.getTime() - startDate.getTime();
+      return Math.round(diffMs / oneDay);
+    }
+    var days = daysBetween(new Date(2010, 11, 20), new Date());
+    innerDoc.getElementById('wfb.experienceYears').innerHTML = parseInt(days / 365, 10);
+  })(window.document);
+</script>
