@@ -19,6 +19,6 @@ def index():
 def get_users():
     return '%d' % len(list_users())
 
-
+# foi necessário mudar o estilo da porta para rodar
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run('localhost',5000)
