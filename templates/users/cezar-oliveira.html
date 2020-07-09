@@ -1,0 +1,45 @@
+<div class="card hoverable">
+	<script src="static/bower/jquery/dist/jquery.min.js"></script>
+	<script src="static/bower/materialize/dist/js/materialize.min.js"></script>
+	{% if script %}
+	<script>
+		function callGithubApi(){
+			$.getJSON('https://api.github.com/users/cezaroliveira', function(jsonObject) {
+				document.getElementById("githubAvatar").setAttribute("src", jsonObject.avatar_url);
+				
+				document.getElementById("outerTitle").innerHTML = jsonObject.name;
+				document.getElementById("innerTitle").innerHTML = jsonObject.name + "<br>" + jsonObject.location;
+				
+				document.getElementById("githubBio").innerHTML = jsonObject.bio;
+				
+				document.getElementById("githubProfile").setAttribute("href", jsonObject.html_url);
+			});
+		}
+		
+		// Realiza a chamada da função para preencher dinamicamente os campos via JSON
+		callGithubApi();
+	</script>
+	{% endif %}
+
+    <div class="card-image waves-effect waves-block waves-light">
+      <!-- Card Image -->
+      <img id="githubAvatar" class="activator" src="">
+    </div>
+	<div class="card-content activator" style="cursor:pointer">
+      <!-- Card Title -->
+      <span id="outerTitle" class="card-title grey-text text-darken-4"></span>
+    </div>
+    <div class="card-reveal">
+      <!-- Card Reveal Content -->
+      <span id="innerTitle" class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+
+      <p id="githubBio"></p>
+
+      <p class="center">
+		<a id="githubProfile" href="" class="grey lighten-2 black-text waves-effect waves-light btn"><i class="fa fa-github-alt left"></i>GitHub Profile</a>
+		<br><br>
+        <a id="linkedinProfile" href="https://www.linkedin.com/in/cezar-oliveira-86b0891b" target="_blank" class="light-blue darken-4 white-text waves-effect waves-light btn"><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin Profile</a>
+      </p>
+    </div>
+
+</div>
