@@ -13,6 +13,8 @@ Um projeto de mural para os participantes do curso de Git e GtHub contribuirem a
 
 Use os comandos abaixo
 
+# Instale o Python caso não tenha `sudo apt install python3-pip`
+    
     pip install Flask
     python server.py
 
