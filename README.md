@@ -1,4 +1,5 @@
 # Git Training Wall
+
 Um projeto de mural para os participantes do curso de Git e GtHub contribuirem aplicando os conceitos aprendidos no curso.
 
 ## Sobre o curso
@@ -11,10 +12,26 @@ Um projeto de mural para os participantes do curso de Git e GtHub contribuirem a
 
 ## Executando
 
-Use os comandos abaixo
+* No Windows:
 
+    1. Baixe o instalador do Python [aqui](https://www.python.org/downloads/);
+    2. Instale o Python;
+    3. Acesse a pasta do projeto no terminal;
+    4. Use os comandos abaixo:
+
+    ```bash
     pip install Flask
     python server.py
+    ```
+
+* No Linux:
+
+    1. Use os comandos abaixo:
+
+    ```bash
+    pip install Flask
+    python server.py
+    ```
 
 Accesse `http://localhost:5000`
 
